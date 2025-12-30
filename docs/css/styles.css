@@ -1,0 +1,58 @@
+/* Reset y tipografía */
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;line-height:1.5;color:#222;background:#f7f8fb}
+.container{max-width:1000px;margin:0 auto;padding:1rem}
+
+/* Cabecera */
+.site-header{background:#0b4a6f;color:#fff;text-align:center;padding:2rem 0}
+.site-header h1{font-size:3rem;margin:0}
+
+/* Navegación principal */
+.main-nav{background:#2c5f7a;color:#fff;text-align:center;padding:1rem 0}
+.main-nav .container{display:flex;justify-content:center;gap:2rem}
+.main-nav a{color:#fff;text-decoration:none;padding:.5rem 1rem;border-radius:4px}
+.main-nav a:hover{background:rgba(255,255,255,0.2)}
+
+/* Hero */
+.hero{background:#fff;padding:2rem;margin:1.25rem 0;border-radius:8px;box-shadow:0 1px 4px rgba(16,24,40,0.05)}
+.hero h2{margin-bottom:.5rem}
+
+/* Viñeta grande */
+.big-card{background:#fff;padding:2rem;border-radius:20px;box-shadow:0 4px 8px rgba(0,0,0,0.1);margin:2rem auto;max-width:800px}
+.big-card h2{text-align:center;margin-bottom:1rem}
+.big-card p{text-align:center;margin-bottom:2rem}
+
+/* Pequeñas viñetas */
+.small-cards{display:grid;grid-template-columns:repeat(2, 1fr);gap:1rem;margin-top:2rem}
+.small-cards .small-card:nth-child(5){grid-column:span 2} /* La quinta ocupa toda la fila */
+.small-card{background:#f9f9f9;padding:1rem;border-radius:10px;text-align:center;border:1px solid #ddd}
+.small-card h3{margin-bottom:.5rem;font-size:1.1rem}
+.small-card p{font-size:0.9rem;margin:0}
+
+/* Formulario */
+form{background:#fff;padding:1rem;border-radius:8px;box-shadow:0 1px 4px rgba(16,24,40,0.04)}
+.form-row{display:flex;flex-direction:column;margin-bottom:.75rem}
+label{font-weight:600;margin-bottom:.35rem}
+input[type="text"],input[type="email"],textarea,select{padding:.6rem;border:1px solid #d6dbe6;border-radius:6px;font-size:1rem}
+textarea{min-height:120px;resize:vertical}
+input[type="submit"],button{background:#0b4a6f;color:#fff;border:none;padding:.6rem .9rem;border-radius:6px;cursor:pointer}
+
+/* Listas y tablas simples */
+.list{background:#fff;padding:1rem;border-radius:8px;box-shadow:0 1px 4px rgba(16,24,40,0.04)}
+.list ul{list-style:none;padding-left:0}
+.list li{padding:.5rem 0;border-bottom:1px solid #eef2f6}
+.list a{color:#0b4a6f;text-decoration:none}
+
+/* Pie */
+.site-footer{margin-top:2rem;padding:1rem 0;text-align:center;color:#6b7280}
+
+/* Título principal */
+.main-title{text-align:center;margin:2rem 0;font-size:2rem}
+
+/* Responsive */
+@media (max-width:640px){
+	.site-header .container{flex-direction:column;align-items:flex-start}
+	.main-nav{margin-top:.5rem}
+}
+

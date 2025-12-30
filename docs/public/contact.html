@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contacto — Trabajo Fundamentos</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <meta name="description" content="Página de contacto con formulario (sin scripts).">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Contacto</h1>
+      <nav class="main-nav">
+        <a href="../index.html">Inicio</a>
+        <a href="about.html">Acerca de mí</a>
+        <a href="degree.html">Grado</a>
+        <a href="topic.html">Tema</a>
+        <a href="net.html">Red</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h2>Ponte en contacto</h2>
+      <p>Completa el formulario a continuación. Nota: este formulario no tiene script ni backend asociado; sirve como demostración de la interfaz.</p>
+    </section>
+
+    <section>
+      <form method="post" action="#" aria-label="Formulario de contacto">
+        <div class="form-row">
+          <label for="name">Nombre</label>
+          <input type="text" id="name" name="name" placeholder="Tu nombre">
+        </div>
+
+        <div class="form-row">
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" placeholder="tu@ejemplo.com">
+        </div>
+
+        <div class="form-row">
+          <label for="subject">Asunto</label>
+          <input type="text" id="subject" name="subject" placeholder="Motivo del mensaje">
+        </div>
+
+        <div class="form-row">
+          <label for="message">Mensaje</label>
+          <textarea id="message" name="message" placeholder="Escribe tu mensaje aquí..."></textarea>
+        </div>
+
+        <div class="form-row">
+          <input type="submit" value="Enviar">
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 — Trabajo Fundamentos</p>
+    </div>
+  </footer>
+</body>
+</html>
